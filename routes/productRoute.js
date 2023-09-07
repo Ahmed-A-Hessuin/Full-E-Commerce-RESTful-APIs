@@ -17,8 +17,13 @@ const {
 } = require('../services/productService');
 
 const authService = require('../services/authService')
+const reviewRoute = require('./reviewRoute')
 
 const router = express.Router();
+
+
+// Nested routes
+router.use('/:productId/reviews', reviewRoute);
 
 router
     .route('/')

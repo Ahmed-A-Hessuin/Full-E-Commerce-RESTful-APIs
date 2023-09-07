@@ -56,7 +56,7 @@ exports.getProducts = factory.getAll(Product, "Product")
 // @desc    Get specific Product by id
 // @route   GET /api/v1/Products/:id
 // @access  Public
-exports.getProduct = factory.getOne(Product)
+exports.getProduct = factory.getOne(Product, "reviews")
 
 // @desc    Create product
 // @route   POST  /api/v1/products
